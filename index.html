@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>responsiveform</title>
+          <style>      
+          body{
+              background:#f2f2f2;
+              margin:0px;
+          }
+          .myform{
+              width:60%;
+              height:600px;
+              margin:80px auto;
+          }
+          .myform input, .myform select{
+              height:50px;
+              border:none;
+              border:1px solid #ccc;
+              border-radius:3px;
+          }
+          .bdr{
+              border:1px dashed black;
+          }
+          .co-25{
+              width:25%;
+              min-height:50px;
+              float:left;
+          }
+          .col-75{
+              width:74%;
+              min-height:50px;
+              float:left;
+          }
+          .w-100{
+              width:100%;
+          }
+          </style>
+    </head>
+    <body>
+       <form class="myform">
+           <div class="row">
+               <div class="co-25 bdr"> 
+                   <label for="fname" class="co-25">First Name</label>
+            </div>
+               <div class="col-75 bdr"> <input id="fname" type="text" name="First Name" placeholder="Your Name.." class="w-100"></div>
+            </div>
+                <div class="row">
+                    <div class="co-25 bdr"> 
+                        <label for="lname" class="co-25">Last Name</label>
+                 </div>
+                 </div>
+                    <div class="col-75 bdr"> <input id="lname" type="text" name="Last Name" placeholder="Your Last Name.." class="w-100"></div>
+                     </div>
+                     <div class="row">
+                        <div class="co-25 bdr"> 
+                            <label for="c" class="co-25,w-100">Country</label>
+                     </div>
+                     </div>
+                     <select id="c" class="col-75">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+                    
+             </form>
+    </body>
+    </html>
